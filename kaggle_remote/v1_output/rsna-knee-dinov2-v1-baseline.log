@@ -1,0 +1,74 @@
+[{"stream_name":"stderr","time":6.288977423,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.289017187,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.289023121,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.289027433,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.854150922,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.854177036,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.854181641,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.854185152,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":16.182641623,"data":"[+] PyTorch Version: 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":16.182677243,"data":"[+] Execution Device: cuda\n"}
+,{"stream_name":"stdout","time":16.182680533,"data":"[+] GPU Device: Tesla T4\n"}
+,{"stream_name":"stdout","time":470.882751759,"data":"[+] Config initialized with data_root=., training fold(s): (0,)\n"}
+,{"stream_name":"stdout","time":471.056732844,"data":"[!] Competition train.csv not found locally. Generating synthetic data for notebook validation.\n"}
+,{"stream_name":"stdout","time":471.056762807,"data":"[+] Loaded 60 total studies (58 gold-labeled studies).\n"}
+,{"stream_name":"stdout","time":471.056767279,"data":"[+] Pre-computed weak labels not found. Computing weak labels inline using ReportLabeler...\n"}
+,{"stream_name":"stdout","time":471.056770619,"data":"[+] 5-Fold GroupKFold assigned. Studies per fold: {4: 12, 3: 12, 2: 12, 1: 12, 0: 12}\n"}
+,{"stream_name":"stdout","time":471.085857949,"data":"\n"}
+,{"stream_name":"stdout","time":471.08587761,"data":"========== STARTING FOLD 0 ==========\n"}
+,{"stream_name":"stdout","time":503.589091421,"data":"[+] Loaded standalone DINOv2 ViT-S/14 backbone\n"}
+,{"stream_name":"stdout","time":503.589149542,"data":"[+] Loading pretrained weights from: /kaggle/input/datasets/girishbose/dinov2-vits14-rsna-knee/dinov2_vits14_pretrain.pth\n"}
+,{"stream_name":"stderr","time":507.604365215,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":507.605070997,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":507.605095755,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":507.605102938,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":507.605108637,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":507.605113307,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":507.605117447,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":507.605121563,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":507.605148153,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":507.605151061,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":507.605153432,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":507.605155671,"data":"Exception encountered at \"In [8]\":\n"}
+,{"stream_name":"stderr","time":507.605157962,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":507.605160229,"data":"RuntimeError                              Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":507.605162666,"data":"/tmp/ipykernel_23/2068339450.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":507.605165015,"data":"     63     val_loader   = DataLoader(val_ds, batch_size=cfg.batch_size, shuffle=False, num_workers=cfg.num_workers)\n"}
+,{"stream_name":"stderr","time":507.605167318,"data":"     64 \n"}
+,{"stream_name":"stderr","time":507.605169441,"data":"---\u003e 65     model = RSNAKneeMultiPlaneDINO(\n"}
+,{"stream_name":"stderr","time":507.605171688,"data":"     66         backbone_dim=cfg.backbone_dim,\n"}
+,{"stream_name":"stderr","time":507.605173843,"data":"     67         num_classes=cfg.num_classes,\n"}
+,{"stream_name":"stderr","time":507.605176069,"data":"\n"}
+,{"stream_name":"stderr","time":507.605178138,"data":"/tmp/ipykernel_23/4291308617.py in __init__(self, backbone_dim, num_classes, metadata_dim, weights_path)\n"}
+,{"stream_name":"stderr","time":507.605180391,"data":"     82         self.num_classes = num_classes\n"}
+,{"stream_name":"stderr","time":507.60518253,"data":"     83         self.backbone_dim = backbone_dim\n"}
+,{"stream_name":"stderr","time":507.605184747,"data":"---\u003e 84         self.backbone = build_backbone(weights_path)\n"}
+,{"stream_name":"stderr","time":507.605187023,"data":"     85         self.att_pool = TargetAttentionPooling(backbone_dim, num_classes)\n"}
+,{"stream_name":"stderr","time":507.605189232,"data":"     86         fused_dim = backbone_dim * 3 + metadata_dim\n"}
+,{"stream_name":"stderr","time":507.605191415,"data":"\n"}
+,{"stream_name":"stderr","time":507.605193453,"data":"/tmp/ipykernel_23/4291308617.py in build_backbone(weights_path)\n"}
+,{"stream_name":"stderr","time":507.605195646,"data":"     62         sd = torch.load(weights_path, map_location='cpu')\n"}
+,{"stream_name":"stderr","time":507.60519783,"data":"     63         if 'model' in sd: sd = sd['model']\n"}
+,{"stream_name":"stderr","time":507.605200543,"data":"---\u003e 64         model.load_state_dict(sd, strict=False)\n"}
+,{"stream_name":"stderr","time":507.605202816,"data":"     65     return model\n"}
+,{"stream_name":"stderr","time":507.605204948,"data":"     66 \n"}
+,{"stream_name":"stderr","time":507.60520702,"data":"\n"}
+,{"stream_name":"stderr","time":507.605214101,"data":"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py in load_state_dict(self, state_dict, strict, assign)\n"}
+,{"stream_name":"stderr","time":507.605216405,"data":"   2637 \n"}
+,{"stream_name":"stderr","time":507.605218486,"data":"   2638         if len(error_msgs) \u003e 0:\n"}
+,{"stream_name":"stderr","time":507.605220686,"data":"-\u003e 2639             raise RuntimeError(\n"}
+,{"stream_name":"stderr","time":507.605222896,"data":"   2640                 \"Error(s) in loading state_dict for {}:\\n\\t{}\".format(\n"}
+,{"stream_name":"stderr","time":507.605225296,"data":"   2641                     self.__class__.__name__, \"\\n\\t\".join(error_msgs)\n"}
+,{"stream_name":"stderr","time":507.60522767,"data":"\n"}
+,{"stream_name":"stderr","time":507.60523532,"data":"RuntimeError: Error(s) in loading state_dict for DINOv2SmallBackbone:\n"}
+,{"stream_name":"stderr","time":507.605237831,"data":"\tsize mismatch for pos_embed: copying a param with shape torch.Size([1, 1370, 384]) from checkpoint, the shape in current model is torch.Size([1, 257, 384]).\n"}
+,{"stream_name":"stderr","time":507.605240249,"data":"\n"}
+,{"stream_name":"stderr","time":509.729930279,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":509.729960506,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":509.89091586,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":509.890939814,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":510.777070097,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":510.855707174,"data":"[NbConvertApp] Writing 59519 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":513.551904333,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":514.23311426,"data":"[NbConvertApp] Writing 475456 bytes to __results__.html\n"}
+]

@@ -1,0 +1,41 @@
+{
+ "weights": {
+  "raptor": 0.5,
+  "ours": 0.5,
+  "raptor_per_class": {
+   "Synovitis": 0.75,
+   "Lateral OA": 0.2,
+   "PF OA": 0.55,
+   "Baker's": 0.3,
+   "Contusion": 0.3,
+   "Fracture": 0.3,
+   "ACL": 0.55,
+   "MCL": 0.4,
+   "Medial Meniscus": 0.45,
+   "Lateral Meniscus": 0.4,
+   "Medial OA": 0.45,
+   "Effusion": 0.5
+  },
+  "a224": 0.35,
+  "r7_share": 0.4
+ },
+ "rows": 3,
+ "mode": "logit_space_rank_fusion",
+ "raptor_failed": 0,
+ "ours_failed": 0,
+ "total_seconds": 668.7,
+ "spearman_raptor_vs_ours": {
+  "ACL": 1.0,
+  "MCL": 1.0,
+  "Medial Meniscus": 1.0,
+  "Lateral Meniscus": -0.5,
+  "Medial OA": -0.5,
+  "Lateral OA": 0.5,
+  "PF OA": 1.0,
+  "Effusion": 0.5,
+  "Synovitis": 1.0,
+  "Baker's": 1.0,
+  "Contusion": 1.0,
+  "Fracture": 1.0
+ }
+}

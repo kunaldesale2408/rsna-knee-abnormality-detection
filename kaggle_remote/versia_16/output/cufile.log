@@ -1,0 +1,6 @@
+ 16-10-2026 17:15:28:886 [pid=406 tid=406] NOTICE  cufio-drv:830 running in compatible mode
+ 16-10-2026 17:15:28:917 [pid=408 tid=408] NOTICE  cufio-drv:830 running in compatible mode
+ 16-10-2026 17:15:28:917 [pid=407 tid=407] NOTICE  cufio-drv:830 running in compatible mode
+ 16-10-2026 17:21:37:223 [pid=931 tid=931] NOTICE  cufio-drv:830 running in compatible mode
+ 16-10-2026 17:21:38:424 [pid=927 tid=927] NOTICE  cufio-drv:830 running in compatible mode
+ 16-10-2026 17:21:38:695 [pid=926 tid=926] NOTICE  cufio-drv:830 running in compatible mode

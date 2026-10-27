@@ -1,0 +1,13 @@
+{
+ "weights": {
+  "raptor": 0.5,
+  "ours": 0.5,
+  "a224": 0.35
+ },
+ "rows": 3,
+ "mode": "probit_microboost_fusion",
+ "raptor384_failed": 0,
+ "raptor224_failed": 0,
+ "ours_failed": 0,
+ "total_seconds": 450.2
+}

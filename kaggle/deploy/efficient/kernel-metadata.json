@@ -1,0 +1,18 @@
+{
+  "id": "kunaldesale2408/rsna-knee-efficient-5fold",
+  "title": "RSNA Knee Efficient 5-Fold",
+  "code_file": "train_efficient.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [
+    "girishbose/dinov2-vits14-rsna-knee"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "kernel_sources": []
+}

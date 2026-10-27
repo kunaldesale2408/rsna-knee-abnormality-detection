@@ -1,0 +1,242 @@
+[{"stream_name":"stderr","time":6.49847182,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.498528868,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.49853579,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.498540347,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.08543304,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.0854645099999995,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.085472291,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.085474807,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":8.855308193,"data":"Writing /tmp/raptor_run.py\n"}
+,{"stream_name":"stdout","time":28.120665326,"data":"device cuda | gpus 2 | torch 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":28.120966865,"data":"test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series\n"}
+,{"stream_name":"stdout","time":28.159334793,"data":"test studies 3 | test series 15\n"}
+,{"stream_name":"stdout","time":28.165842677,"data":"XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda\n"}
+,{"stream_name":"stdout","time":28.322987075,"data":"device cuda | gpus 2 | torch 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":28.323011783,"data":"test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series\n"}
+,{"stream_name":"stdout","time":28.323017418,"data":"test studies 3 | test series 15\n"}
+,{"stream_name":"stdout","time":28.323020875,"data":"XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda\n"}
+,{"stream_name":"stdout","time":30.054724526,"data":"[weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef\n"}
+,{"stream_name":"stdout","time":30.257328374,"data":"[weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef\n"}
+,{"stream_name":"stdout","time":32.031779447,"data":"[gpu cuda:0] loaded 1 arm(s) | 4s\n"}
+,{"stream_name":"stdout","time":32.233973173,"data":"[gpu cuda:0] loaded 1 arm(s) | 4s\n"}
+,{"stream_name":"stdout","time":32.995566541,"data":"[weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef\n"}
+,{"stream_name":"stdout","time":33.197929879,"data":"[weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef\n"}
+,{"stream_name":"stdout","time":34.6502551,"data":"[gpu cuda:1] loaded 1 arm(s) | 7s\n"}
+,{"stream_name":"stdout","time":34.855848094,"data":"[gpu cuda:1] loaded 1 arm(s) | 7s\n"}
+,{"stream_name":"stdout","time":37.686631483,"data":"  [pre] 3/3 | 10s\n"}
+,{"stream_name":"stdout","time":37.774784553,"data":"[pre] done: 3 studies in 3s (procs 4 x fastread study_lut 32/16 threads)\n"}
+,{"stream_name":"stdout","time":37.889224584,"data":"  [pre] 3/3 | 10s\n"}
+,{"stream_name":"stdout","time":37.889258986,"data":"[pre] done: 3 studies in 3s (procs 4 x fastread study_lut 32/16 threads)\n"}
+,{"stream_name":"stdout","time":50.326468546,"data":"  [gpu] 3/3 | 22s\n"}
+,{"stream_name":"stdout","time":50.326957994,"data":"[gpu] done: 3/3 studies on 2 device(s) | 22s\n"}
+,{"stream_name":"stdout","time":50.541738109,"data":"  [gpu] 3/3 | 22s\n"}
+,{"stream_name":"stdout","time":50.541772185,"data":"[gpu] done: 3/3 studies on 2 device(s) | 22s\n"}
+,{"stream_name":"stdout","time":50.566521984,"data":"[blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt': np.float64(1.0)}\n"}
+,{"stream_name":"stdout","time":50.570581752,"data":"wrote /kaggle/working/raptor_sub.csv | 3 rows x 13 cols\n"}
+,{"stream_name":"stdout","time":50.57912319,"data":"                                                StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture\n"}
+,{"stream_name":"stdout","time":50.579157553,"data":"1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.5      1.0        0.5       0.0\n"}
+,{"stream_name":"stdout","time":50.579163714,"data":"1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0\n"}
+,{"stream_name":"stdout","time":50.579168961,"data":"1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.0      0.0        0.0       0.5\n"}
+,{"stream_name":"stdout","time":50.579173471,"data":"DONE 22s\n"}
+,{"stream_name":"stdout","time":50.768798804,"data":"[blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt': np.float64(1.0)}\n"}
+,{"stream_name":"stdout","time":50.76883051,"data":"wrote /kaggle/working/raptor_sub.csv | 3 rows x 13 cols\n"}
+,{"stream_name":"stdout","time":50.768834791,"data":"                                                StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture\n"}
+,{"stream_name":"stdout","time":50.768838745,"data":"1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.5      1.0        0.5       0.0\n"}
+,{"stream_name":"stdout","time":50.76884235,"data":"1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0\n"}
+,{"stream_name":"stdout","time":50.76884577,"data":"1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.0      0.0        0.0       0.5\n"}
+,{"stream_name":"stdout","time":50.768849433,"data":"DONE 22s\n"}
+,{"stream_name":"stdout","time":54.675340115,"data":"RAPTOR_STAGE_DONE seconds 46\n"}
+,{"stream_name":"stdout","time":54.701601712,"data":"0, 0 MiB\n"}
+,{"stream_name":"stdout","time":54.701628299,"data":"1, 0 MiB\n"}
+,{"stream_name":"stdout","time":54.709326706,"data":"0, 0 MiB\n"}
+,{"stream_name":"stdout","time":54.709348603,"data":"1, 0 MiB\n"}
+,{"stream_name":"stdout","time":54.799377645,"data":"Writing /tmp/raptor224_run.py\n"}
+,{"stream_name":"stdout","time":62.160813225,"data":"device cuda | gpus 2 | torch 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":62.161815866,"data":"test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series\n"}
+,{"stream_name":"stdout","time":62.171098297,"data":"test studies 3 | test series 15\n"}
+,{"stream_name":"stdout","time":62.174019591,"data":"XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda\n"}
+,{"stream_name":"stdout","time":62.363038019,"data":"device cuda | gpus 2 | torch 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":62.363063807,"data":"test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series\n"}
+,{"stream_name":"stdout","time":62.3630695,"data":"test studies 3 | test series 15\n"}
+,{"stream_name":"stdout","time":62.36307312,"data":"XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda\n"}
+,{"stream_name":"stdout","time":64.316849334,"data":"[gpu cuda:0] loaded 1 arm(s) | 2s\n"}
+,{"stream_name":"stdout","time":64.519597531,"data":"[gpu cuda:0] loaded 1 arm(s) | 2s\n"}
+,{"stream_name":"stdout","time":66.054454453,"data":"[gpu cuda:1] loaded 1 arm(s) | 4s\n"}
+,{"stream_name":"stdout","time":66.258693495,"data":"[gpu cuda:1] loaded 1 arm(s) | 4s\n"}
+,{"stream_name":"stdout","time":67.872229322,"data":"  [pre] 3/3 | 6s\n"}
+,{"stream_name":"stdout","time":67.961415776,"data":"[pre] done: 3 studies in 2s (procs 4 x fastread study_lut 32/16 threads)\n"}
+,{"stream_name":"stdout","time":68.074706286,"data":"  [pre] 3/3 | 6s\n"}
+,{"stream_name":"stdout","time":68.074746471,"data":"[pre] done: 3 studies in 2s (procs 4 x fastread study_lut 32/16 threads)\n"}
+,{"stream_name":"stdout","time":77.153199164,"data":"  [gpu] 3/3 | 15s\n"}
+,{"stream_name":"stdout","time":77.153503505,"data":"[gpu] done: 3/3 studies on 2 device(s) | 15s\n"}
+,{"stream_name":"stdout","time":77.355720881,"data":"  [gpu] 3/3 | 15s\n"}
+,{"stream_name":"stdout","time":77.355751411,"data":"[gpu] done: 3/3 studies on 2 device(s) | 15s\n"}
+,{"stream_name":"stdout","time":77.374560497,"data":"[blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_c08_r224_swa.pt': np.float64(1.0)}\n"}
+,{"stream_name":"stdout","time":77.380437023,"data":"wrote /kaggle/working/raptor224_sub.csv | 3 rows x 13 cols\n"}
+,{"stream_name":"stdout","time":77.384869743,"data":"                                                StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture\n"}
+,{"stream_name":"stdout","time":77.384887655,"data":"1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.0      1.0        0.0       0.5\n"}
+,{"stream_name":"stdout","time":77.384894032,"data":"1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0\n"}
+,{"stream_name":"stdout","time":77.384902176,"data":"1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.5      0.0        0.5       0.0\n"}
+,{"stream_name":"stdout","time":77.384912738,"data":"DONE 15s\n"}
+,{"stream_name":"stdout","time":77.577216204,"data":"[blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_c08_r224_swa.pt': np.float64(1.0)}\n"}
+,{"stream_name":"stdout","time":77.577293787,"data":"wrote /kaggle/working/raptor224_sub.csv | 3 rows x 13 cols\n"}
+,{"stream_name":"stdout","time":77.577302558,"data":"                                                StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture\n"}
+,{"stream_name":"stdout","time":77.577308857,"data":"1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.0      1.0        0.0       0.5\n"}
+,{"stream_name":"stdout","time":77.577335208,"data":"1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0\n"}
+,{"stream_name":"stdout","time":77.577338358,"data":"1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.5      0.0        0.5       0.0\n"}
+,{"stream_name":"stdout","time":77.577340948,"data":"DONE 15s\n"}
+,{"stream_name":"stdout","time":78.865074098,"data":"R224_STAGE rc=0 ok=True seconds 24\n"}
+,{"stream_name":"stdout","time":79.022286892,"data":"0, Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":79.022320274,"data":"1, Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":79.03180169,"data":"Filesystem      Size  Used Avail Use% Mounted on\n"}
+,{"stream_name":"stdout","time":79.031829516,"data":"shm              14G     0   14G   0% /dev/shm\n"}
+,{"stream_name":"stdout","time":79.031832886,"data":"/dev/loop2       20G  1.8M   20G   1% /kaggle/working\n"}
+,{"stream_name":"stdout","time":79.031835348,"data":"overlay         8.0T  7.0T  1.1T  87% /\n"}
+,{"stream_name":"stdout","time":79.065238781,"data":"0, Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":79.065290106,"data":"1, Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":79.065297617,"data":"Filesystem      Size  Used Avail Use% Mounted on\n"}
+,{"stream_name":"stdout","time":79.065302312,"data":"shm              14G     0   14G   0% /dev/shm\n"}
+,{"stream_name":"stdout","time":79.065306367,"data":"/dev/loop2       20G  1.8M   20G   1% /kaggle/working\n"}
+,{"stream_name":"stdout","time":79.065310103,"data":"overlay         8.0T  7.0T  1.1T  87% /\n"}
+,{"stream_name":"stdout","time":85.577187599,"data":"Processing /tmp/probe/wheels/pydicom-3.0.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":85.60255917,"data":"Processing /tmp/probe/wheels/timm-1.0.25-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":85.617149346,"data":"Installing collected packages: timm, pydicom\n"}
+,{"stream_name":"stdout","time":85.617496203,"data":"  Attempting uninstall: timm\n"}
+,{"stream_name":"stdout","time":85.779431924,"data":"Processing /tmp/probe/wheels/pydicom-3.0.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":85.779456942,"data":"Processing /tmp/probe/wheels/timm-1.0.25-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":85.779462621,"data":"Installing collected packages: timm, pydicom\n"}
+,{"stream_name":"stdout","time":85.77946789,"data":"  Attempting uninstall: timm\n"}
+,{"stream_name":"stdout","time":85.917515984,"data":"    Found existing installation: timm 1.0.29\n"}
+,{"stream_name":"stdout","time":85.945186242,"data":"    Uninstalling timm-1.0.29:\n"}
+,{"stream_name":"stdout","time":86.106516593,"data":"      Successfully uninstalled timm-1.0.29\n"}
+,{"stream_name":"stdout","time":86.120087082,"data":"    Found existing installation: timm 1.0.29\n"}
+,{"stream_name":"stdout","time":86.120110814,"data":"    Uninstalling timm-1.0.29:\n"}
+,{"stream_name":"stdout","time":86.12011482,"data":"      Successfully uninstalled timm-1.0.29\n"}
+,{"stream_name":"stdout","time":87.165668969,"data":"  Attempting uninstall: pydicom\n"}
+,{"stream_name":"stdout","time":87.223182556,"data":"    Found existing installation: pydicom 3.0.2\n"}
+,{"stream_name":"stdout","time":87.238306238,"data":"    Uninstalling pydicom-3.0.2:\n"}
+,{"stream_name":"stdout","time":87.36817363,"data":"  Attempting uninstall: pydicom\n"}
+,{"stream_name":"stdout","time":87.368207195,"data":"    Found existing installation: pydicom 3.0.2\n"}
+,{"stream_name":"stdout","time":87.368211949,"data":"    Uninstalling pydicom-3.0.2:\n"}
+,{"stream_name":"stdout","time":87.446499735,"data":"      Successfully uninstalled pydicom-3.0.2\n"}
+,{"stream_name":"stdout","time":87.648913534,"data":"      Successfully uninstalled pydicom-3.0.2\n"}
+,{"stream_name":"stdout","time":88.445473279,"data":"Successfully installed pydicom-3.0.1 timm-1.0.25\n"}
+,{"stream_name":"stdout","time":88.647889694,"data":"Successfully installed pydicom-3.0.1 timm-1.0.25\n"}
+,{"stream_name":"stdout","time":99.242594738,"data":"ASSETS_READY /kaggle/input/datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004 /kaggle/input/datasets/rostigor/rsna-knee-r6-fe055406 /kaggle/input/competitions/rsna-knee-abnormality-detection flip_tta True seconds 90.4\n"}
+,{"stream_name":"stdout","time":99.513578261,"data":"WORKER_START 0 studies 2 dicom files 419\n"}
+,{"stream_name":"stdout","time":99.514494029,"data":"WORKER_START 1 studies 1 dicom files 138\n"}
+,{"stream_name":"stdout","time":99.716878956,"data":"WORKER_START 0 studies 2 dicom files 419\n"}
+,{"stream_name":"stdout","time":99.71690683,"data":"WORKER_START 1 studies 1 dicom files 138\n"}
+,{"stream_name":"stdout","time":104.515079623,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":104.515397176,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":104.717821249,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":104.717851939,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":164.518372687,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":164.518447545,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":164.749501368,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":164.749556197,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":224.520118013,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":224.520148251,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":224.744408295,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":224.744436748,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":284.524184073,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":284.524710085,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":284.746962015,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":284.74698847,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":344.532868571,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":344.532946957,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":344.791174004,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":344.791202193,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":404.534974899,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":404.535015688,"data":"PROGRESS worker 1 of 1 {\"done\": 1, \"of\": 1, \"scored\": 1, \"fallback\": 0, \"elapsed_s\": 300.9, \"s_per_study\": 300.94, \"decode_s\": 33.0, \"render_s\": 1.6, \"gpu_s\": 17.9, \"anchor_s\": 1.1, \"anchors\": {\"skm_tea_joint\": 1}, \"windows\": 502, \"fluid_s\": 0.08, \"fluid_missing\": {\"Effusion\": 0}}\n"}
+,{"stream_name":"stdout","time":404.754908133,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":404.754988204,"data":"PROGRESS worker 1 of 1 {\"done\": 1, \"of\": 1, \"scored\": 1, \"fallback\": 0, \"elapsed_s\": 300.9, \"s_per_study\": 300.94, \"decode_s\": 33.0, \"render_s\": 1.6, \"gpu_s\": 17.9, \"anchor_s\": 1.1, \"anchors\": {\"skm_tea_joint\": 1}, \"windows\": 502, \"fluid_s\": 0.08, \"fluid_missing\": {\"Effusion\": 0}}\n"}
+,{"stream_name":"stdout","time":444.540264447,"data":"CONTROLLER_DONE {\"status\": \"PASS\", \"rows\": 3, \"scored\": 3, \"fallback_studies\": 0, \"seconds\": 345.2, \"per_study_mean\": {\"decode_s\": 35.3, \"render_s\": 2.2, \"gpu_s\": 19.667, \"windows\": 528.7}, \"worker_exit_codes\": {\"0\": 0, \"1\": 0}}\n"}
+,{"stream_name":"stdout","time":444.572972858,"data":"CONTROLLER_DONE {\"status\": \"PASS\", \"rows\": 3, \"scored\": 3, \"fallback_studies\": 0, \"seconds\": 345.2, \"per_study_mean\": {\"decode_s\": 35.3, \"render_s\": 2.2, \"gpu_s\": 19.667, \"windows\": 528.7}, \"worker_exit_codes\": {\"0\": 0, \"1\": 0}}\n"}
+,{"stream_name":"stdout","time":444.573023122,"data":"OURS_STAGE_COMPLETE {\"status\": \"PASS\", \"arm\": \"E_lrprior\", \"rows\": 3, \"scored\": 3, \"fallback_studies\": 0, \"seconds\": 345.2, \"per_study_mean\": {\"decode_s\": 35.3, \"render_s\": 2.2, \"gpu_s\": 19.667, \"windows\": 528.7}, \"gpus\": [\"Tesla T4\", \"Tesla T4\"]}\n"}
+,{"stream_name":"stdout","time":445.042947864,"data":"0, Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":445.043318532,"data":"1, Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":445.049702087,"data":"Filesystem      Size  Used Avail Use% Mounted on\n"}
+,{"stream_name":"stdout","time":445.049721224,"data":"shm              14G     0   14G   0% /dev/shm\n"}
+,{"stream_name":"stdout","time":445.049727816,"data":"/dev/loop2       20G  1.9M   20G   1% /kaggle/working\n"}
+,{"stream_name":"stdout","time":445.049736767,"data":"overlay         8.0T  7.0T  1.1T  87% /\n"}
+,{"stream_name":"stdout","time":445.24495966,"data":"0, Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":445.24498307,"data":"1, Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":445.244986946,"data":"Filesystem      Size  Used Avail Use% Mounted on\n"}
+,{"stream_name":"stdout","time":445.245002803,"data":"shm              14G     0   14G   0% /dev/shm\n"}
+,{"stream_name":"stdout","time":445.245008034,"data":"/dev/loop2       20G  1.9M   20G   1% /kaggle/working\n"}
+,{"stream_name":"stdout","time":445.245012664,"data":"overlay         8.0T  7.0T  1.1T  87% /\n"}
+,{"stream_name":"stdout","time":448.438661578,"data":"Processing /tmp/probe_r7/wheels/pydicom-3.0.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":448.461568573,"data":"Processing /tmp/probe_r7/wheels/timm-1.0.25-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":448.47476056,"data":"pydicom is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":448.475878136,"data":"timm is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":448.641218538,"data":"Processing /tmp/probe_r7/wheels/pydicom-3.0.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":448.641254337,"data":"Processing /tmp/probe_r7/wheels/timm-1.0.25-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":448.641260015,"data":"pydicom is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":448.641266441,"data":"timm is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":458.5963215,"data":"ASSETS_READY /kaggle/input/datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004 /kaggle/input/datasets/heliosli/rsna-knee-compact-r7cnxfsss /kaggle/input/competitions/rsna-knee-abnormality-detection seconds 449.7\n"}
+,{"stream_name":"stdout","time":458.767470874,"data":"WORKER_START 0 studies 2 dicom files 419\n"}
+,{"stream_name":"stdout","time":458.768387382,"data":"WORKER_START 1 studies 1 dicom files 138\n"}
+,{"stream_name":"stdout","time":458.796388526,"data":"WORKER_START 0 studies 2 dicom files 419\n"}
+,{"stream_name":"stdout","time":458.796408431,"data":"WORKER_START 1 studies 1 dicom files 138\n"}
+,{"stream_name":"stdout","time":463.768946103,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":463.768978422,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":463.972094713,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":463.972128125,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":523.771342481,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":523.771396099,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":523.999767597,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":523.999795302,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":583.773200705,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":583.77323793,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":584.001307009,"data":"PROGRESS worker 0 of 2 (starting)\n"}
+,{"stream_name":"stdout","time":584.001332606,"data":"PROGRESS worker 1 of 1 (starting)\n"}
+,{"stream_name":"stdout","time":643.77501965,"data":"PROGRESS worker 0 of 2 {\"done\": 1, \"of\": 2, \"scored\": 1, \"fallback\": 0, \"elapsed_s\": 181.0, \"s_per_study\": 181.02, \"decode_s\": 29.8, \"render_s\": 2.6, \"gpu_s\": 11.2, \"anchor_s\": 1.5, \"anchors\": {\"slab_prior\": 1}, \"windows\": 574, \"fluid_s\": 0.0, \"fluid_missing\": {\"Effusion\": 1}}\n"}
+,{"stream_name":"stdout","time":643.775065154,"data":"PROGRESS worker 1 of 1 {\"done\": 1, \"of\": 1, \"scored\": 1, \"fallback\": 0, \"elapsed_s\": 164.6, \"s_per_study\": 164.58, \"decode_s\": 26.9, \"render_s\": 1.9, \"gpu_s\": 8.7, \"anchor_s\": 1.1, \"anchors\": {\"skm_tea_joint\": 1}, \"windows\": 502, \"fluid_s\": 0.07, \"fluid_missing\": {\"Effusion\": 0}}\n"}
+,{"stream_name":"stdout","time":643.998541682,"data":"PROGRESS worker 0 of 2 {\"done\": 1, \"of\": 2, \"scored\": 1, \"fallback\": 0, \"elapsed_s\": 181.0, \"s_per_study\": 181.02, \"decode_s\": 29.8, \"render_s\": 2.6, \"gpu_s\": 11.2, \"anchor_s\": 1.5, \"anchors\": {\"slab_prior\": 1}, \"windows\": 574, \"fluid_s\": 0.0, \"fluid_missing\": {\"Effusion\": 1}}\n"}
+,{"stream_name":"stdout","time":643.9985758,"data":"PROGRESS worker 1 of 1 {\"done\": 1, \"of\": 1, \"scored\": 1, \"fallback\": 0, \"elapsed_s\": 164.6, \"s_per_study\": 164.58, \"decode_s\": 26.9, \"render_s\": 1.9, \"gpu_s\": 8.7, \"anchor_s\": 1.1, \"anchors\": {\"skm_tea_joint\": 1}, \"windows\": 502, \"fluid_s\": 0.07, \"fluid_missing\": {\"Effusion\": 0}}\n"}
+,{"stream_name":"stdout","time":658.778582858,"data":"CONTROLLER_DONE {\"status\": \"PASS\", \"rows\": 3, \"scored\": 3, \"fallback_studies\": 0, \"seconds\": 200.1, \"per_study_mean\": {\"decode_s\": 27.067, \"render_s\": 2.167, \"gpu_s\": 9.933, \"windows\": 528.7}, \"worker_exit_codes\": {\"0\": 0, \"1\": 0}}\n"}
+,{"stream_name":"stdout","time":658.796290034,"data":"CONTROLLER_DONE {\"status\": \"PASS\", \"rows\": 3, \"scored\": 3, \"fallback_studies\": 0, \"seconds\": 200.1, \"per_study_mean\": {\"decode_s\": 27.067, \"render_s\": 2.167, \"gpu_s\": 9.933, \"windows\": 528.7}, \"worker_exit_codes\": {\"0\": 0, \"1\": 0}}\n"}
+,{"stream_name":"stdout","time":658.79633565,"data":"R7_STAGE_COMPLETE {\"status\": \"PASS\", \"arm\": \"E_lrprior\", \"rows\": 3, \"scored\": 3, \"fallback_studies\": 0, \"seconds\": 200.1, \"per_study_mean\": {\"decode_s\": 27.067, \"render_s\": 2.167, \"gpu_s\": 9.933, \"windows\": 528.7}, \"gpus\": [\"Tesla T4\", \"Tesla T4\"]}\n"}
+,{"stream_name":"stdout","time":658.802664797,"data":"                                    StudyInstanceUID           ACL       MCL  \\\n"}
+,{"stream_name":"stdout","time":658.80269343,"data":"0  1.2.826.0.1.3680043.8.498.10047035057544427318...  1.435069e-06  0.000078   \n"}
+,{"stream_name":"stdout","time":658.802696999,"data":"1  1.2.826.0.1.3680043.8.498.10062861783145312629...  1.446029e-06  0.001182   \n"}
+,{"stream_name":"stdout","time":658.802699277,"data":"2  1.2.826.0.1.3680043.8.498.10067514707072572280...  6.409284e-07  0.000033   \n"}
+,{"stream_name":"stdout","time":658.802701632,"data":"\n"}
+,{"stream_name":"stdout","time":658.802703756,"data":"   Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA     PF OA  \\\n"}
+,{"stream_name":"stdout","time":658.802705985,"data":"0         0.999998          0.000038   0.469910    0.000356  0.003103   \n"}
+,{"stream_name":"stdout","time":658.802708169,"data":"1         0.999816          0.000004   0.989311    0.999373  1.000000   \n"}
+,{"stream_name":"stdout","time":658.802711432,"data":"2         0.000072          0.000041   0.999896    0.790358  0.999995   \n"}
+,{"stream_name":"stdout","time":658.802715178,"data":"\n"}
+,{"stream_name":"stdout","time":658.802718797,"data":"   Effusion  Synovitis   Baker's  Contusion  Fracture  \n"}
+,{"stream_name":"stdout","time":658.802721292,"data":"0  0.129931   0.006519  0.975149   0.000090  0.000014  \n"}
+,{"stream_name":"stdout","time":658.802746908,"data":"1  0.059728   0.999852  0.028009   0.016399  0.131626  \n"}
+,{"stream_name":"stdout","time":658.802750917,"data":"2  0.016449   0.000036  0.008857   0.000043  0.000028  \n"}
+,{"stream_name":"stdout","time":658.897026515,"data":"R7_IN_BLEND share 0.4, unscored 0\n"}
+,{"stream_name":"stdout","time":659.446870282,"data":"NOTEBOOK_COMPLETE {\"weights\": {\"raptor\": 0.5, \"ours\": 0.5, \"raptor_per_class\": {\"Medial OA\": 0.5, \"Lateral OA\": 0.2, \"PF OA\": 0.6, \"Synovitis\": 0.8, \"Baker's\": 0.35}}, \"rows\": 3, \"raptor_failed\": 0, \"ours_failed\": 0, \"raptor_seconds\": 45.8, \"total_seconds\": 650.6, \"spearman_raptor_raw_vs_sub\": {\"ACL\": 1.0, \"MCL\": 1.0, \"Medial Meniscus\": 1.0, \"Lateral Meniscus\": 1.0, \"Medial OA\": 1.0, \"Lateral OA\": 1.0, \"PF OA\": 1.0, \"Effusion\": 1.0, \"Synovitis\": 1.0, \"Baker's\": 1.0, \"Contusion\": 1.0, \"Fracture\": 1.0}, \"spearman_raptor_vs_ours\": {\"ACL\": 1.0, \"MCL\": 1.0, \"Medial Meniscus\": 1.0, \"Lateral Meniscus\": -0.5, \"Medial OA\": -0.5, \"Lateral OA\": 0.5, \"PF OA\": 1.0, \"Effusion\": 0.5, \"Synovitis\": 1.0, \"Baker's\": 1.0, \"Contusion\": 1.0, \"Fracture\": 1.0}, \"mode\": \"blend\", \"both_failed\": 0, \"rank_basis\": \"each model over its own non-failed rows\", \"r7_share\": 0.4}\n"}
+,{"stream_name":"stdout","time":659.547957622,"data":"Writing /kaggle/working/own_src/preprocess.py\n"}
+,{"stream_name":"stdout","time":659.581574786,"data":"Writing /kaggle/working/own_src/knee.py\n"}
+,{"stream_name":"stdout","time":659.61337736,"data":"Writing /kaggle/working/own_src/infer.py\n"}
+,{"stream_name":"stderr","time":660.264193587,"data":"ERROR: Could not find a version that satisfies the requirement pylibjpeg-libjpeg (from versions: none)\n"}
+,{"stream_name":"stderr","time":660.264463809,"data":"ERROR: No matching distribution found for pylibjpeg-libjpeg\n"}
+,{"stream_name":"stderr","time":660.472935566,"data":"ERROR: Could not find a version that satisfies the requirement pylibjpeg-libjpeg (from versions: none)\n"}
+,{"stream_name":"stderr","time":660.472978851,"data":"ERROR: No matching distribution found for pylibjpeg-libjpeg\n"}
+,{"stream_name":"stderr","time":660.472983678,"data":"\n"}
+,{"stream_name":"stderr","time":660.472987756,"data":"ERROR: Could not find a version that satisfies the requirement pylibjpeg-libjpeg (from versions: none)\n"}
+,{"stream_name":"stderr","time":660.472992046,"data":"ERROR: No matching distribution found for pylibjpeg-libjpeg\n"}
+,{"stream_name":"stdout","time":662.799754448,"data":"own leg: free GPU memory (GB) [15.5, 15.5]\n"}
+,{"stream_name":"stdout","time":684.44617885,"data":"wrote /kaggle/working/_own.csv\n"}
+,{"stream_name":"stdout","time":684.648792277,"data":"wrote /kaggle/working/_own.csv\n"}
+,{"stream_name":"stdout","time":685.692331607,"data":"own leg: per-target weights {\"Baker's\": 0.035, 'Contusion': 0.03, 'Medial OA': 0.025, 'ACL': 0.025, 'Medial Meniscus': 0.02, 'MCL': 0.02, 'Lateral Meniscus': 0.008, 'Fracture': 0.008, 'Lateral OA': 0.008, 'PF OA': 0.008, 'Effusion': 0.004, 'Synovitis': 0.003}\n"}
+,{"stream_name":"stdout","time":685.692363357,"data":"own leg: blended 3 checkpoints at weight 0.15 in 23s; mean rank corr with stack 0.750\n"}
+,{"stream_name":"stderr","time":688.865100932,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":688.865127101,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":689.019512155,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":689.019535817,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":689.808978956,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":689.923813934,"data":"[NbConvertApp] Writing 992754 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":692.469493157,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":693.449497434,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":693.449537006,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":693.449981989,"data":"[NbConvertApp] Writing 1439166 bytes to __results__.html\n"}
+]

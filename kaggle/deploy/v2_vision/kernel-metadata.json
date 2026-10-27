@@ -1,0 +1,19 @@
+{
+  "id": "kunaldesale2408/rsna-knee-v2-vision-asl",
+  "title": "RSNA Knee V2 Vision ASL",
+  "code_file": "train_v2.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [
+    "girishbose/dinov2-vits14-rsna-knee",
+    "stevenleehans/rsna-knee-llm-report-labels"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "kernel_sources": []
+}

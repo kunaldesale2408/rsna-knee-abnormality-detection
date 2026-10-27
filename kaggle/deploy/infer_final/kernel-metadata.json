@@ -1,0 +1,21 @@
+{
+  "id": "kunaldesale2408/rsna-knee-infer-final-ensemble",
+  "title": "RSNA Knee Infer Final Ensemble",
+  "code_file": "infer_final.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [
+    "girishbose/dinov2-vits14-rsna-knee"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "kernel_sources": [
+    "kunaldesale2408/rsna-knee-dinov2-v1-baseline",
+    "kunaldesale2408/rsna-knee-v2-vision-asl"
+  ]
+}

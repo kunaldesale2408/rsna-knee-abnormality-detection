@@ -1,0 +1,25 @@
+{
+  "id": "eeshanvaghjiani2004/rsna-knee-per-finding-mega-ensemble-top-10",
+  "id_no": 138656113,
+  "title": "RSNA Knee - Per-Finding Mega-Ensemble (TOP 10)",
+  "code_file": "rsna-knee-per-finding-mega-ensemble-top-10.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [
+    "goodpjw2008/rsna-knee-2-5d-convnext-reader",
+    "heliosli/rsna-knee-compact-v1",
+    "nartaa/rsna-knee-publication-swa-weights-20261007"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "machine_shape": "NvidiaTeslaT4"
+}

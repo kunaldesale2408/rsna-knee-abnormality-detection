@@ -1,0 +1,480 @@
+{
+ "status": "PASS",
+ "arm": "E_lrprior",
+ "rows": 3,
+ "scored": 3,
+ "fallback_studies": 0,
+ "fallback_reasons": {},
+ "worker_exit_codes": {
+  "0": 0,
+  "1": 0
+ },
+ "gpus": [
+  "Tesla T4",
+  "Tesla T4"
+ ],
+ "seconds": 190.1,
+ "per_study_mean": {
+  "decode_s": 27.333,
+  "render_s": 2.667,
+  "gpu_s": 10.267,
+  "windows": 528.7
+ },
+ "workers": [
+  {
+   "status": "PASS",
+   "arm": "E_lrprior",
+   "models": [
+    "E_lrprior_s0_f0.pt",
+    "E_lrprior_s0_f1.pt",
+    "E_lrprior_s0_f2.pt",
+    "E_lrprior_s0_f3.pt"
+   ],
+   "backbone": "convnext_small",
+   "shared_trunk": false,
+   "init": null,
+   "spatial_models": 4,
+   "extent_models": 4,
+   "group2": null,
+   "syn_decomp_models": 4,
+   "crop": 352,
+   "crop2": null,
+   "line_mix": "logit",
+   "compile": {
+    "requested": true,
+    "active": true,
+    "mode": "default",
+    "backend": "inductor",
+    "tol_prob": 0.001,
+    "checked": true,
+    "fallback": null,
+    "shapes": [
+     32,
+     64,
+     96,
+     128,
+     160,
+     192
+    ],
+    "check_seconds": 115.7,
+    "decision": "compiled == eager within 0.001 (max |dp| 0.000232)",
+    "study_dprob": 0.0002319,
+    "fp32_err_compiled": null,
+    "fp32_err_eager": null,
+    "max_abs_dlogit": 0.0082169,
+    "max_abs_dprob": 0.001941,
+    "per_group": [
+     {
+      "group": "group1",
+      "crop": 352,
+      "synthetic_dlogit": 0.0045753,
+      "synthetic_dprob": 0.0005665,
+      "study_dlogit": 0.0082169,
+      "study_dprob": 0.001941
+     }
+    ],
+    "graphs": 6
+   },
+   "trainer_md5": "8622009e3db0414124d5614ed252d7a2",
+   "trainer_file": "/tmp/probe_r7/probe_src/compact_train.py",
+   "worker_file": "compact_infer.py",
+   "studies": 2,
+   "scored": 2,
+   "fallback": {},
+   "timed_out": false,
+   "amp": "fp16",
+   "gpu": "Tesla T4",
+   "torch": "2.11.0+cu128",
+   "timm": "1.0.25",
+   "seconds": 183.6,
+   "stats": {
+    "decode_s": 56.3,
+    "render_s": 6.0,
+    "gpu_s": 20.1,
+    "windows": 1084,
+    "wait_s": 35.5,
+    "rows": 2,
+    "anchor_s": 3.4
+   },
+   "per_study": [
+    [
+     "1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191",
+     574,
+     27.347,
+     3.801,
+     10.705
+    ],
+    [
+     "1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776",
+     510,
+     28.949,
+     2.229,
+     9.411
+    ]
+   ],
+   "anchor_methods": {
+    "slab_prior": 1,
+    "skm_tea_joint_avg2": 1
+   },
+   "views": "v4",
+   "phys_mm": 3.5,
+   "side_check": {
+    "checked": 1,
+    "flipped": 0,
+    "threshold": 2.0,
+    "max_x": 0.0,
+    "position_mm": 20.0,
+    "model_sha256": "ab623e2b619db4917639220fed15202e8c8aedd07c8e298a66a2afc0f153650a"
+   },
+   "anchor_weights_sha256": "5904dd16eb9a4fd7a1caf90ac977f8fe2ef364908598c23c209db3fe7fd1563e",
+   "sha256": {
+    "px_cache.py": "b13e38a7ad3bd496f8027e02209653e224b0926db4f0853eeb0d076a2d6e2632",
+    "compact_train.py": "04df7e2e154b2c2521696908f272940c63ce17e9b6337b85847fee64504eeaba",
+    "compact_infer.py": "8401812cd63737ec99839d317c4037c4efb445d1baec892fa7481bb30399cc2d",
+    "probe_infer.py": "a6cc31448019c84be5868d0a2ff1d99719b23b0f86110efc03efff3ce6bd6980",
+    "side_common.py": "bbcc5d027834e6a6fd48c4a8cf228e25661b7522c792587c840fe4d7cd5c0566",
+    "knee_anchor_bank_v2.py": "e564807a129dfcd3c984348917436ee6083066a4d685340587ebd1d3ea14f309"
+   },
+   "model": "compact fine-tuned image model on the pixel cache",
+   "state_stacker": {
+    "json": "/tmp/probe_r7/bundle/state_stacker.json",
+    "sha256": "7b54a3f774dad3f842d68aaccbb03771806c26c0a3ca3a07fea8575a21f3ead3",
+    "created": "2026-10-12 03:48:55",
+    "lines": [
+     {
+      "seeds": [
+       0
+      ],
+      "runs": [
+       {
+        "run": "/root/autodl-tmp/rsna_align_s0/runs/cnx_r7",
+        "seed": 0,
+        "oof": "oof_E_lrprior_s0.npy",
+        "oof_md5": "aeca67f8354bc6958664829e36866f6b",
+        "state_oof": "oof_state_E_lrprior_s0.npy",
+        "state_oof_md5": "6a9f621e4905a069e35cd204cf1d9ebc",
+        "state_sidecar_md5": "096f909698a9ae0876fd4ef76dc4924f",
+        "state_spec": "/root/autodl-tmp/rsna_align_s0/targets/state_spec_opusv11b_rr7.json",
+        "state_spec_md5": "87f25a26c6ff63b261310adb2691c57e",
+        "fold_models": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "pool": 4344,
+        "config_crop": 352
+       }
+      ]
+     }
+    ],
+    "classes": {
+     "Baker's": {
+      "features": [
+       "z",
+       "state:none",
+       "state:small",
+       "state:present_unspecified",
+       "state:moderate",
+       "state:large",
+       "state:ruptured_or_leaking"
+      ],
+      "b0": -0.9419823704788006,
+      "coef": [
+       0.15951592857810987,
+       -2.133273565606069,
+       -1.2384385690108033,
+       1.181378860458332,
+       4.154773805899135,
+       2.5401172029445758,
+       7.900497970912339
+      ],
+      "volume_column": null
+     }
+    },
+    "state_combine": "arithmetic mean over the fold models of state_probs",
+    "studies": 2,
+    "stack_fallback": {}
+   },
+   "fluid_stacker": {
+    "json": "/tmp/probe_r7/bundle/fluid_stacker.json",
+    "sha256": "be5a1664077300db1fdd0af8daaf44a3ebc41f91152e4f0ec124f805a7a51efb",
+    "created": "2026-10-12 03:48:52",
+    "combine": "logit",
+    "weights": [
+     1.0
+    ],
+    "lines": [
+     "/root/autodl-tmp/rsna_align_s0/runs/cnx_r7"
+    ],
+    "z": "v3b line mix",
+    "weights_per_class": {
+     "Effusion": [
+      1.0
+     ]
+    },
+    "classes": {
+     "Effusion": {
+      "b0": -3.9257329704307597,
+      "b_z": 0.32395987695271,
+      "b_lv": 0.757651130981294,
+      "b_miss": 2.1289503614485294,
+      "volume_column": "eff_sag_p99_open"
+     }
+    },
+    "studies": 2,
+    "with_volume": {
+     "Effusion": 1
+    },
+    "missing": {
+     "Effusion": 1
+    },
+    "status": {
+     "no fluid-sensitive sagittal series": 1,
+     "ok": 1
+    },
+    "fluid_s": 0.13,
+    "stack_s": 0.001,
+    "fluid_s_per_study": 0.0668,
+    "stack_fallback": {},
+    "first": [
+     [
+      "1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191",
+      "no fluid-sensitive sagittal series",
+      null,
+      null,
+      0.0001
+     ],
+     [
+      "1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776",
+      "ok",
+      1.1076069215162703,
+      9.434809435001352,
+      0.1336
+     ]
+    ]
+   }
+  },
+  {
+   "status": "PASS",
+   "arm": "E_lrprior",
+   "models": [
+    "E_lrprior_s0_f0.pt",
+    "E_lrprior_s0_f1.pt",
+    "E_lrprior_s0_f2.pt",
+    "E_lrprior_s0_f3.pt"
+   ],
+   "backbone": "convnext_small",
+   "shared_trunk": false,
+   "init": null,
+   "spatial_models": 4,
+   "extent_models": 4,
+   "group2": null,
+   "syn_decomp_models": 4,
+   "crop": 352,
+   "crop2": null,
+   "line_mix": "logit",
+   "compile": {
+    "requested": true,
+    "active": true,
+    "mode": "default",
+    "backend": "inductor",
+    "tol_prob": 0.001,
+    "checked": true,
+    "fallback": null,
+    "shapes": [
+     32,
+     64,
+     96,
+     128,
+     160,
+     192
+    ],
+    "check_seconds": 118.1,
+    "decision": "compiled == eager within 0.001 (max |dp| 0.000198)",
+    "study_dprob": 0.0001976,
+    "fp32_err_compiled": null,
+    "fp32_err_eager": null,
+    "max_abs_dlogit": 0.0110445,
+    "max_abs_dprob": 0.0003618,
+    "per_group": [
+     {
+      "group": "group1",
+      "crop": 352,
+      "synthetic_dlogit": 0.0045753,
+      "synthetic_dprob": 0.0005665,
+      "study_dlogit": 0.0110445,
+      "study_dprob": 0.0003618
+     }
+    ],
+    "graphs": 6
+   },
+   "trainer_md5": "8622009e3db0414124d5614ed252d7a2",
+   "trainer_file": "/tmp/probe_r7/probe_src/compact_train.py",
+   "worker_file": "compact_infer.py",
+   "studies": 1,
+   "scored": 1,
+   "fallback": {},
+   "timed_out": false,
+   "amp": "fp16",
+   "gpu": "Tesla T4",
+   "torch": "2.11.0+cu128",
+   "timm": "1.0.25",
+   "seconds": 172.6,
+   "stats": {
+    "decode_s": 25.7,
+    "render_s": 2.0,
+    "gpu_s": 10.7,
+    "windows": 502,
+    "wait_s": 31.8,
+    "rows": 1,
+    "anchor_s": 1.1
+   },
+   "per_study": [
+    [
+     "1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402",
+     502,
+     25.737,
+     1.972,
+     10.664
+    ]
+   ],
+   "anchor_methods": {
+    "skm_tea_joint": 1
+   },
+   "views": "v4",
+   "phys_mm": 3.5,
+   "side_check": {
+    "checked": 1,
+    "flipped": 0,
+    "threshold": 2.0,
+    "max_x": 0.0,
+    "position_mm": 20.0,
+    "model_sha256": "ab623e2b619db4917639220fed15202e8c8aedd07c8e298a66a2afc0f153650a"
+   },
+   "anchor_weights_sha256": "5904dd16eb9a4fd7a1caf90ac977f8fe2ef364908598c23c209db3fe7fd1563e",
+   "sha256": {
+    "px_cache.py": "b13e38a7ad3bd496f8027e02209653e224b0926db4f0853eeb0d076a2d6e2632",
+    "compact_train.py": "04df7e2e154b2c2521696908f272940c63ce17e9b6337b85847fee64504eeaba",
+    "compact_infer.py": "8401812cd63737ec99839d317c4037c4efb445d1baec892fa7481bb30399cc2d",
+    "probe_infer.py": "a6cc31448019c84be5868d0a2ff1d99719b23b0f86110efc03efff3ce6bd6980",
+    "side_common.py": "bbcc5d027834e6a6fd48c4a8cf228e25661b7522c792587c840fe4d7cd5c0566",
+    "knee_anchor_bank_v2.py": "e564807a129dfcd3c984348917436ee6083066a4d685340587ebd1d3ea14f309"
+   },
+   "model": "compact fine-tuned image model on the pixel cache",
+   "state_stacker": {
+    "json": "/tmp/probe_r7/bundle/state_stacker.json",
+    "sha256": "7b54a3f774dad3f842d68aaccbb03771806c26c0a3ca3a07fea8575a21f3ead3",
+    "created": "2026-10-12 03:48:55",
+    "lines": [
+     {
+      "seeds": [
+       0
+      ],
+      "runs": [
+       {
+        "run": "/root/autodl-tmp/rsna_align_s0/runs/cnx_r7",
+        "seed": 0,
+        "oof": "oof_E_lrprior_s0.npy",
+        "oof_md5": "aeca67f8354bc6958664829e36866f6b",
+        "state_oof": "oof_state_E_lrprior_s0.npy",
+        "state_oof_md5": "6a9f621e4905a069e35cd204cf1d9ebc",
+        "state_sidecar_md5": "096f909698a9ae0876fd4ef76dc4924f",
+        "state_spec": "/root/autodl-tmp/rsna_align_s0/targets/state_spec_opusv11b_rr7.json",
+        "state_spec_md5": "87f25a26c6ff63b261310adb2691c57e",
+        "fold_models": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "pool": 4344,
+        "config_crop": 352
+       }
+      ]
+     }
+    ],
+    "classes": {
+     "Baker's": {
+      "features": [
+       "z",
+       "state:none",
+       "state:small",
+       "state:present_unspecified",
+       "state:moderate",
+       "state:large",
+       "state:ruptured_or_leaking"
+      ],
+      "b0": -0.9419823704788006,
+      "coef": [
+       0.15951592857810987,
+       -2.133273565606069,
+       -1.2384385690108033,
+       1.181378860458332,
+       4.154773805899135,
+       2.5401172029445758,
+       7.900497970912339
+      ],
+      "volume_column": null
+     }
+    },
+    "state_combine": "arithmetic mean over the fold models of state_probs",
+    "studies": 1,
+    "stack_fallback": {}
+   },
+   "fluid_stacker": {
+    "json": "/tmp/probe_r7/bundle/fluid_stacker.json",
+    "sha256": "be5a1664077300db1fdd0af8daaf44a3ebc41f91152e4f0ec124f805a7a51efb",
+    "created": "2026-10-12 03:48:52",
+    "combine": "logit",
+    "weights": [
+     1.0
+    ],
+    "lines": [
+     "/root/autodl-tmp/rsna_align_s0/runs/cnx_r7"
+    ],
+    "z": "v3b line mix",
+    "weights_per_class": {
+     "Effusion": [
+      1.0
+     ]
+    },
+    "classes": {
+     "Effusion": {
+      "b0": -3.9257329704307597,
+      "b_z": 0.32395987695271,
+      "b_lv": 0.757651130981294,
+      "b_miss": 2.1289503614485294,
+      "volume_column": "eff_sag_p99_open"
+     }
+    },
+    "studies": 1,
+    "with_volume": {
+     "Effusion": 1
+    },
+    "missing": {
+     "Effusion": 0
+    },
+    "status": {
+     "ok": 1
+    },
+    "fluid_s": 0.07,
+    "stack_s": 0.0,
+    "fluid_s_per_study": 0.0728,
+    "stack_fallback": {},
+    "first": [
+     [
+      "1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402",
+      "ok",
+      11.410588279746372,
+      2.0828717247446344,
+      0.0728
+     ]
+    ]
+   }
+  }
+ ],
+ "worker": "compact_infer.py",
+ "seconds_including_notebook_setup": 633.9429609775543,
+ "bundle_id": "8c7b666e27dc0e8f"
+}

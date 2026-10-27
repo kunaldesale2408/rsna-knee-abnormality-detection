@@ -1,0 +1,165 @@
+[{"stream_name":"stderr","time":8.396944072,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.397008431,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.397015452,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.397020799,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.094837141,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.094869497,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.09487425,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.094878192,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":22.531234407,"data":"[+] PyTorch Version: 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":22.531268723,"data":"[+] Execution Device: cuda\n"}
+,{"stream_name":"stdout","time":22.531273762,"data":"[+] GPU Device: Tesla T4\n"}
+,{"stream_name":"stdout","time":290.569336497,"data":"[+] Config initialized with data_root=/kaggle/input/competitions/rsna-knee-abnormality-detection, training fold(s): (0,)\n"}
+,{"stream_name":"stdout","time":291.222448585,"data":"[+] Loaded 4407 total studies (0 gold-labeled studies).\n"}
+,{"stream_name":"stdout","time":291.222491785,"data":"[+] Pre-computed weak labels not found. Computing weak labels inline using ReportLabeler...\n"}
+,{"stream_name":"stdout","time":297.020061441,"data":"[+] 5-Fold GroupKFold assigned. Studies per fold: {0: 882, 1: 882, 4: 881, 3: 881, 2: 881}\n"}
+,{"stream_name":"stdout","time":297.220642459,"data":"\n"}
+,{"stream_name":"stdout","time":297.220677939,"data":"========== STARTING FOLD 0 ==========\n"}
+,{"stream_name":"stdout","time":329.630513966,"data":"[+] Loaded standalone DINOv2 ViT-S/14 backbone\n"}
+,{"stream_name":"stdout","time":329.630548997,"data":"[+] Loading pretrained weights from: /kaggle/input/datasets/girishbose/dinov2-vits14-rsna-knee/dinov2_vits14_pretrain.pth\n"}
+,{"stream_name":"stdout","time":330.68337718,"data":"[+] Interpolated pos_embed from 37x37 to 16x16\n"}
+,{"stream_name":"stderr","time":337.178296191,"data":"/tmp/ipykernel_23/2068339450.py:76: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":337.178326566,"data":"  scaler = torch.cuda.amp.GradScaler(enabled=cfg.amp and device.type == 'cuda')\n"}
+,{"stream_name":"stderr","time":337.17833313,"data":"\n"}
+,{"stream_name":"stderr","time":337.178338687,"data":"/tmp/ipykernel_23/2068339450.py:76: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":337.178344923,"data":"  scaler = torch.cuda.amp.GradScaler(enabled=cfg.amp and device.type == 'cuda')\n"}
+,{"stream_name":"stderr","time":338.671881612,"data":"/tmp/ipykernel_23/2068339450.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":338.671924437,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":338.671931446,"data":"\n"}
+,{"stream_name":"stderr","time":338.671936267,"data":"/tmp/ipykernel_23/2068339450.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":338.671955847,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":4079.180307248,"data":"/tmp/ipykernel_23/2068339450.py:21: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":4079.181635166,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":4079.18165349,"data":"\n"}
+,{"stream_name":"stderr","time":4079.181659333,"data":"/tmp/ipykernel_23/2068339450.py:21: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":4079.18166489,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stdout","time":5164.203695825,"data":"\n"}
+,{"stream_name":"stdout","time":5164.20705218,"data":"--- Prediction Standard Deviation Diagnostic ---\n"}
+,{"stream_name":"stdout","time":5164.207067426,"data":"  ACL                 : mean=0.195, std=0.017 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.20707156,"data":"  MCL                 : mean=0.177, std=0.005 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.207075176,"data":"  Medial Meniscus     : mean=0.356, std=0.023 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.207078709,"data":"  Lateral Meniscus    : mean=0.195, std=0.009 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.207082069,"data":"  Medial OA           : mean=0.146, std=0.004 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.207085385,"data":"  Lateral OA          : mean=0.118, std=0.007 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.20708895,"data":"  PF OA               : mean=0.109, std=0.006 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.207092322,"data":"  Effusion            : mean=0.296, std=0.048 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.207096574,"data":"  Synovitis           : mean=0.186, std=0.035 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.207115158,"data":"  Baker's Cyst        : mean=0.263, std=0.026 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.207121366,"data":"  Contusion           : mean=0.200, std=0.013 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.207127411,"data":"  Fracture            : mean=0.131, std=0.009 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":5164.207133449,"data":"Fold 0 | Epoch 01 | Train Loss: 0.5109 | Val Loss: 0.5042 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":5164.404599005,"data":"  [*] Saved best loss checkpoint to /kaggle/working/best_loss_fold0.pt\n"}
+,{"stream_name":"stdout","time":5164.404633328,"data":"  [*] Saved best AUC checkpoint to /kaggle/working/best_auc_fold0.pt\n"}
+,{"stream_name":"stdout","time":10405.947079063,"data":"\n"}
+,{"stream_name":"stdout","time":10405.947129921,"data":"--- Prediction Standard Deviation Diagnostic ---\n"}
+,{"stream_name":"stdout","time":10405.947134925,"data":"  ACL                 : mean=0.159, std=0.019 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":10405.947138549,"data":"  MCL                 : mean=0.139, std=0.010 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":10405.947142155,"data":"  Medial Meniscus     : mean=0.208, std=0.030 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":10405.947145635,"data":"  Lateral Meniscus    : mean=0.224, std=0.015 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":10405.947149014,"data":"  Medial OA           : mean=0.137, std=0.009 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":10405.947162324,"data":"  Lateral OA          : mean=0.136, std=0.010 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":10405.947165203,"data":"  PF OA               : mean=0.107, std=0.011 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":10405.947167917,"data":"  Effusion            : mean=0.286, std=0.074\n"}
+,{"stream_name":"stdout","time":10405.94717052,"data":"  Synovitis           : mean=0.239, std=0.069\n"}
+,{"stream_name":"stdout","time":10405.947173209,"data":"  Baker's Cyst        : mean=0.330, std=0.049 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":10405.947175843,"data":"  Contusion           : mean=0.220, std=0.037 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":10405.947178569,"data":"  Fracture            : mean=0.150, std=0.017 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":10405.94718123,"data":"Fold 0 | Epoch 02 | Train Loss: 0.5026 | Val Loss: 0.4997 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":10406.122679601,"data":"  [*] Saved best loss checkpoint to /kaggle/working/best_loss_fold0.pt\n"}
+,{"stream_name":"stdout","time":10406.122764982,"data":"  [*] Saved best AUC checkpoint to /kaggle/working/best_auc_fold0.pt\n"}
+,{"stream_name":"stdout","time":15326.051427659,"data":"\n"}
+,{"stream_name":"stdout","time":15326.051481799,"data":"--- Prediction Standard Deviation Diagnostic ---\n"}
+,{"stream_name":"stdout","time":15326.051488457,"data":"  ACL                 : mean=0.201, std=0.024 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":15326.051493896,"data":"  MCL                 : mean=0.135, std=0.015 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":15326.051499157,"data":"  Medial Meniscus     : mean=0.266, std=0.052\n"}
+,{"stream_name":"stdout","time":15326.051504255,"data":"  Lateral Meniscus    : mean=0.167, std=0.018 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":15326.051509438,"data":"  Medial OA           : mean=0.133, std=0.018 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":15326.051514559,"data":"  Lateral OA          : mean=0.163, std=0.014 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":15326.051519639,"data":"  PF OA               : mean=0.139, std=0.013 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":15326.051525147,"data":"  Effusion            : mean=0.342, std=0.117\n"}
+,{"stream_name":"stdout","time":15326.051530216,"data":"  Synovitis           : mean=0.253, std=0.082\n"}
+,{"stream_name":"stdout","time":15326.051535329,"data":"  Baker's Cyst        : mean=0.313, std=0.072\n"}
+,{"stream_name":"stdout","time":15326.051540304,"data":"  Contusion           : mean=0.232, std=0.030 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":15326.051545482,"data":"  Fracture            : mean=0.209, std=0.039 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":15326.051550591,"data":"Fold 0 | Epoch 03 | Train Loss: 0.4990 | Val Loss: 0.4962 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":15326.223271768,"data":"  [*] Saved best loss checkpoint to /kaggle/working/best_loss_fold0.pt\n"}
+,{"stream_name":"stdout","time":15326.223302284,"data":"  [*] Saved best AUC checkpoint to /kaggle/working/best_auc_fold0.pt\n"}
+,{"stream_name":"stdout","time":20117.659479936,"data":"\n"}
+,{"stream_name":"stdout","time":20117.659539561,"data":"--- Prediction Standard Deviation Diagnostic ---\n"}
+,{"stream_name":"stdout","time":20117.659547271,"data":"  ACL                 : mean=0.214, std=0.033 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":20117.659552725,"data":"  MCL                 : mean=0.151, std=0.021 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":20117.659558353,"data":"  Medial Meniscus     : mean=0.287, std=0.078\n"}
+,{"stream_name":"stdout","time":20117.659584905,"data":"  Lateral Meniscus    : mean=0.175, std=0.024 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":20117.659589586,"data":"  Medial OA           : mean=0.131, std=0.016 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":20117.659593465,"data":"  Lateral OA          : mean=0.135, std=0.015 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":20117.659597455,"data":"  PF OA               : mean=0.141, std=0.025 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":20117.659607084,"data":"  Effusion            : mean=0.287, std=0.123\n"}
+,{"stream_name":"stdout","time":20117.659610343,"data":"  Synovitis           : mean=0.200, std=0.066\n"}
+,{"stream_name":"stdout","time":20117.659612967,"data":"  Baker's Cyst        : mean=0.312, std=0.084\n"}
+,{"stream_name":"stdout","time":20117.659615508,"data":"  Contusion           : mean=0.264, std=0.054\n"}
+,{"stream_name":"stdout","time":20117.659618132,"data":"  Fracture            : mean=0.180, std=0.030 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":20117.659620702,"data":"Fold 0 | Epoch 04 | Train Loss: 0.4955 | Val Loss: 0.4941 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":20117.836728524,"data":"  [*] Saved best loss checkpoint to /kaggle/working/best_loss_fold0.pt\n"}
+,{"stream_name":"stdout","time":20117.836773609,"data":"  [*] Saved best AUC checkpoint to /kaggle/working/best_auc_fold0.pt\n"}
+,{"stream_name":"stdout","time":24794.030106002,"data":"\n"}
+,{"stream_name":"stdout","time":24794.030164927,"data":"--- Prediction Standard Deviation Diagnostic ---\n"}
+,{"stream_name":"stdout","time":24794.030172637,"data":"  ACL                 : mean=0.229, std=0.033 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":24794.030177702,"data":"  MCL                 : mean=0.149, std=0.018 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":24794.03018251,"data":"  Medial Meniscus     : mean=0.292, std=0.078\n"}
+,{"stream_name":"stdout","time":24794.030187358,"data":"  Lateral Meniscus    : mean=0.174, std=0.031 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":24794.030192173,"data":"  Medial OA           : mean=0.149, std=0.023 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":24794.030203081,"data":"  Lateral OA          : mean=0.138, std=0.027 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":24794.030206483,"data":"  PF OA               : mean=0.107, std=0.011 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":24794.030209706,"data":"  Effusion            : mean=0.323, std=0.116\n"}
+,{"stream_name":"stdout","time":24794.030212866,"data":"  Synovitis           : mean=0.258, std=0.085\n"}
+,{"stream_name":"stdout","time":24794.03021611,"data":"  Baker's Cyst        : mean=0.321, std=0.090\n"}
+,{"stream_name":"stdout","time":24794.03021921,"data":"  Contusion           : mean=0.293, std=0.054\n"}
+,{"stream_name":"stdout","time":24794.030222377,"data":"  Fracture            : mean=0.175, std=0.032 [WARNING: COLLAPSE]\n"}
+,{"stream_name":"stdout","time":24794.030225562,"data":"Fold 0 | Epoch 05 | Train Loss: 0.4927 | Val Loss: 0.4927 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":24794.198085935,"data":"  [*] Saved best loss checkpoint to /kaggle/working/best_loss_fold0.pt\n"}
+,{"stream_name":"stdout","time":24794.198120743,"data":"  [*] Saved best AUC checkpoint to /kaggle/working/best_auc_fold0.pt\n"}
+,{"stream_name":"stdout","time":24795.061193556,"data":"[+] Generating inference predictions using checkpoint: /kaggle/working/best_auc_fold0.pt\n"}
+,{"stream_name":"stdout","time":24827.433134475,"data":"[+] Loaded standalone DINOv2 ViT-S/14 backbone\n"}
+,{"stream_name":"stderr","time":24833.361063346,"data":"/tmp/ipykernel_23/379745600.py:36: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":24833.361135411,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":24833.361142885,"data":"\n"}
+,{"stream_name":"stderr","time":24833.361146864,"data":"/tmp/ipykernel_23/379745600.py:36: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":24833.361151209,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":24834.91645303,"data":"/tmp/ipykernel_23/379745600.py:36: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":24834.916509624,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":24834.916516056,"data":"\n"}
+,{"stream_name":"stderr","time":24834.91652002,"data":"/tmp/ipykernel_23/379745600.py:36: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":24834.91652434,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stdout","time":24836.455241528,"data":"[OK] Submission successfully saved to /kaggle/working/submission.csv with shape (3, 12)\n"}
+,{"stream_name":"stdout","time":24836.455276015,"data":"                                    StudyInstanceUID       ACL       MCL  \\\n"}
+,{"stream_name":"stdout","time":24836.455281485,"data":"0  1.2.826.0.1.3680043.8.498.10047035057544427318...  0.176392  0.109924   \n"}
+,{"stream_name":"stdout","time":24836.455285726,"data":"1  1.2.826.0.1.3680043.8.498.10062861783145312629...  0.249390  0.167847   \n"}
+,{"stream_name":"stdout","time":24836.455289663,"data":"2  1.2.826.0.1.3680043.8.498.10067514707072572280...  0.177612  0.109314   \n"}
+,{"stream_name":"stdout","time":24836.455293702,"data":"\n"}
+,{"stream_name":"stdout","time":24836.455297804,"data":"   Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA     PF OA  \\\n"}
+,{"stream_name":"stdout","time":24836.455301801,"data":"0         0.096558          0.152100   0.108948    0.112793  0.127441   \n"}
+,{"stream_name":"stdout","time":24836.455305917,"data":"1         0.321533          0.211060   0.198853    0.168335  0.109131   \n"}
+,{"stream_name":"stdout","time":24836.455309934,"data":"2         0.204468          0.147461   0.134277    0.126831  0.089294   \n"}
+,{"stream_name":"stdout","time":24836.455313947,"data":"\n"}
+,{"stream_name":"stdout","time":24836.455318633,"data":"   Effusion  Synovitis  Contusion  Fracture  \n"}
+,{"stream_name":"stdout","time":24836.455322767,"data":"0  0.318848   0.141113   0.196777  0.122314  \n"}
+,{"stream_name":"stdout","time":24836.455326838,"data":"1  0.383057   0.360352   0.304932  0.180542  \n"}
+,{"stream_name":"stdout","time":24836.455331597,"data":"2  0.204712   0.159302   0.275635  0.119690  \n"}
+,{"stream_name":"stderr","time":24836.456493999,"data":"/tmp/ipykernel_23/379745600.py:36: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":24836.456530709,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":24836.456536067,"data":"/usr/local/lib/python3.13/dist-packages/pandas/io/formats/format.py:1458: RuntimeWarning: overflow encountered in cast\n"}
+,{"stream_name":"stderr","time":24836.456571868,"data":"  has_large_values = (abs_vals \u003e 1e6).any()\n"}
+,{"stream_name":"stderr","time":24836.456580946,"data":"\n"}
+,{"stream_name":"stderr","time":24836.45658518,"data":"/tmp/ipykernel_23/379745600.py:36: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":24836.456589559,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":24836.456593584,"data":"/usr/local/lib/python3.13/dist-packages/pandas/io/formats/format.py:1458: RuntimeWarning: overflow encountered in cast\n"}
+,{"stream_name":"stderr","time":24836.456597802,"data":"  has_large_values = (abs_vals \u003e 1e6).any()\n"}
+,{"stream_name":"stderr","time":24843.846216194,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":24843.846256785,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":24844.228288339,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":24844.228313477,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":24846.017345742,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":24846.126425158,"data":"[NbConvertApp] Writing 124490 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":24849.218431486,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":24850.382403087,"data":"[NbConvertApp] Writing 539723 bytes to __results__.html\n"}
+]

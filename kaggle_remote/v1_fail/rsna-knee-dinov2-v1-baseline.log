@@ -1,0 +1,128 @@
+[{"stream_name":"stderr","time":7.615095832,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.615140628,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.615145215,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.615148274,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.241461994,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.241488998,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.241493917,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.241497772,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":20.033193739,"data":"[+] PyTorch Version: 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":20.033225309,"data":"[+] Execution Device: cuda\n"}
+,{"stream_name":"stdout","time":20.033231488,"data":"[+] GPU Device: Tesla T4\n"}
+,{"stream_name":"stdout","time":1315.373009762,"data":"[+] Config initialized with data_root=/kaggle/input/competitions/rsna-knee-abnormality-detection, training fold(s): (0,)\n"}
+,{"stream_name":"stdout","time":1316.300705253,"data":"[+] Loaded 4407 total studies (0 gold-labeled studies).\n"}
+,{"stream_name":"stdout","time":1316.300733044,"data":"[+] Pre-computed weak labels not found. Computing weak labels inline using ReportLabeler...\n"}
+,{"stream_name":"stdout","time":1321.376668765,"data":"[+] 5-Fold GroupKFold assigned. Studies per fold: {0: 882, 1: 882, 4: 881, 3: 881, 2: 881}\n"}
+,{"stream_name":"stdout","time":1321.57674589,"data":"\n"}
+,{"stream_name":"stdout","time":1321.576774663,"data":"========== STARTING FOLD 0 ==========\n"}
+,{"stream_name":"stdout","time":1353.978161032,"data":"[+] Loaded standalone DINOv2 ViT-S/14 backbone\n"}
+,{"stream_name":"stdout","time":1353.978194081,"data":"[+] Loading pretrained weights from: /kaggle/input/datasets/girishbose/dinov2-vits14-rsna-knee/dinov2_vits14_pretrain.pth\n"}
+,{"stream_name":"stdout","time":1359.716746378,"data":"[+] Interpolated pos_embed from 37x37 to 16x16\n"}
+,{"stream_name":"stderr","time":1365.52526907,"data":"/tmp/ipykernel_23/2068339450.py:76: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":1365.525296663,"data":"  scaler = torch.cuda.amp.GradScaler(enabled=cfg.amp and device.type == 'cuda')\n"}
+,{"stream_name":"stderr","time":1365.525302124,"data":"\n"}
+,{"stream_name":"stderr","time":1365.525306613,"data":"/tmp/ipykernel_23/2068339450.py:76: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":1365.525311529,"data":"  scaler = torch.cuda.amp.GradScaler(enabled=cfg.amp and device.type == 'cuda')\n"}
+,{"stream_name":"stderr","time":1368.442564157,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1368.443175692,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":1368.443193868,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":1368.443200832,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1368.44321601,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":1368.443219962,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":1368.443223334,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1368.443227433,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":1368.443242048,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":1368.443250584,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":1368.443254391,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":1368.443258166,"data":"Exception encountered at \"In [8]\":\n"}
+,{"stream_name":"stderr","time":1368.44326142,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":1368.443264856,"data":"KeyError                                  Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":1368.443268005,"data":"/tmp/ipykernel_23/2068339450.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":1368.443271983,"data":"    104         pbar = tqdm(enumerate(train_loader), total=len(train_loader), desc=f'Fold {fold} Epoch {epoch+1}/{cfg.epochs}')\n"}
+,{"stream_name":"stderr","time":1368.443275772,"data":"    105 \n"}
+,{"stream_name":"stderr","time":1368.443279113,"data":"--\u003e 106         for step, batch in pbar:\n"}
+,{"stream_name":"stderr","time":1368.443282758,"data":"    107             sag = batch['sag'].to(device)\n"}
+,{"stream_name":"stderr","time":1368.443286741,"data":"    108             cor = batch['cor'].to(device)\n"}
+,{"stream_name":"stderr","time":1368.443290089,"data":"\n"}
+,{"stream_name":"stderr","time":1368.443293522,"data":"/usr/local/lib/python3.13/dist-packages/tqdm/notebook.py in __iter__(self)\n"}
+,{"stream_name":"stderr","time":1368.443297025,"data":"    248         try:\n"}
+,{"stream_name":"stderr","time":1368.44330074,"data":"    249             it = super().__iter__()\n"}
+,{"stream_name":"stderr","time":1368.443303821,"data":"--\u003e 250             yield from it\n"}
+,{"stream_name":"stderr","time":1368.443307142,"data":"    251         # NB: except ... [ as ...] breaks IPython async KeyboardInterrupt\n"}
+,{"stream_name":"stderr","time":1368.443310328,"data":"    252         except:  # NOQA\n"}
+,{"stream_name":"stderr","time":1368.443313741,"data":"\n"}
+,{"stream_name":"stderr","time":1368.44331727,"data":"/usr/local/lib/python3.13/dist-packages/tqdm/std.py in __iter__(self)\n"}
+,{"stream_name":"stderr","time":1368.443321652,"data":"   1179 \n"}
+,{"stream_name":"stderr","time":1368.443325366,"data":"   1180         try:\n"}
+,{"stream_name":"stderr","time":1368.443328945,"data":"-\u003e 1181             for obj in iterable:\n"}
+,{"stream_name":"stderr","time":1368.443341318,"data":"   1182                 yield obj\n"}
+,{"stream_name":"stderr","time":1368.443344887,"data":"   1183                 # Update and possibly print the progressbar.\n"}
+,{"stream_name":"stderr","time":1368.4433481,"data":"\n"}
+,{"stream_name":"stderr","time":1368.44335133,"data":"/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py in __next__(self)\n"}
+,{"stream_name":"stderr","time":1368.443358798,"data":"    739                 # TODO(https://github.com/pytorch/pytorch/issues/76750)\n"}
+,{"stream_name":"stderr","time":1368.443392452,"data":"    740                 self._reset()  # type: ignore[call-arg]\n"}
+,{"stream_name":"stderr","time":1368.44339984,"data":"--\u003e 741             data = self._next_data()\n"}
+,{"stream_name":"stderr","time":1368.44340338,"data":"    742             self._num_yielded += 1\n"}
+,{"stream_name":"stderr","time":1368.443406834,"data":"    743             if (\n"}
+,{"stream_name":"stderr","time":1368.443410133,"data":"\n"}
+,{"stream_name":"stderr","time":1368.443413482,"data":"/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py in _next_data(self)\n"}
+,{"stream_name":"stderr","time":1368.443417043,"data":"   1546                 worker_id = self._task_info.pop(idx)[0]\n"}
+,{"stream_name":"stderr","time":1368.443420729,"data":"   1547                 self._rcvd_idx += 1\n"}
+,{"stream_name":"stderr","time":1368.443424226,"data":"-\u003e 1548                 return self._process_data(data, worker_id)\n"}
+,{"stream_name":"stderr","time":1368.443427835,"data":"   1549 \n"}
+,{"stream_name":"stderr","time":1368.443431192,"data":"   1550     def _try_put_index(self) -\u003e None:\n"}
+,{"stream_name":"stderr","time":1368.443434512,"data":"\n"}
+,{"stream_name":"stderr","time":1368.443437733,"data":"/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py in _process_data(self, data, worker_idx)\n"}
+,{"stream_name":"stderr","time":1368.443441512,"data":"   1584         self._try_put_index()\n"}
+,{"stream_name":"stderr","time":1368.443446399,"data":"   1585         if isinstance(data, ExceptionWrapper):\n"}
+,{"stream_name":"stderr","time":1368.443449735,"data":"-\u003e 1586             data.reraise()\n"}
+,{"stream_name":"stderr","time":1368.443453308,"data":"   1587         return data\n"}
+,{"stream_name":"stderr","time":1368.443456522,"data":"   1588 \n"}
+,{"stream_name":"stderr","time":1368.443460104,"data":"\n"}
+,{"stream_name":"stderr","time":1368.443463212,"data":"/usr/local/lib/python3.13/dist-packages/torch/_utils.py in reraise(self)\n"}
+,{"stream_name":"stderr","time":1368.443466988,"data":"    783             # be constructed, don't try to instantiate since we don't know how to\n"}
+,{"stream_name":"stderr","time":1368.443470577,"data":"    784             raise RuntimeError(msg) from None\n"}
+,{"stream_name":"stderr","time":1368.443474385,"data":"--\u003e 785         raise exception\n"}
+,{"stream_name":"stderr","time":1368.443477687,"data":"    786 \n"}
+,{"stream_name":"stderr","time":1368.443480904,"data":"    787 \n"}
+,{"stream_name":"stderr","time":1368.443484309,"data":"\n"}
+,{"stream_name":"stderr","time":1368.443487557,"data":"KeyError: Caught KeyError in DataLoader worker process 0.\n"}
+,{"stream_name":"stderr","time":1368.443491315,"data":"Original Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1368.44349465,"data":"  File \"/usr/local/lib/python3.13/dist-packages/pandas/core/indexes/base.py\", line 3812, in get_loc\n"}
+,{"stream_name":"stderr","time":1368.443498573,"data":"    return self._engine.get_loc(casted_key)\n"}
+,{"stream_name":"stderr","time":1368.443502274,"data":"           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1368.4435059,"data":"  File \"pandas/_libs/index.pyx\", line 167, in pandas._libs.index.IndexEngine.get_loc\n"}
+,{"stream_name":"stderr","time":1368.443509792,"data":"  File \"pandas/_libs/index.pyx\", line 196, in pandas._libs.index.IndexEngine.get_loc\n"}
+,{"stream_name":"stderr","time":1368.443513427,"data":"  File \"pandas/_libs/hashtable_class_helper.pxi\", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item\n"}
+,{"stream_name":"stderr","time":1368.443521895,"data":"  File \"pandas/_libs/hashtable_class_helper.pxi\", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item\n"}
+,{"stream_name":"stderr","time":1368.44352558,"data":"KeyError: 'Plane'\n"}
+,{"stream_name":"stderr","time":1368.443529304,"data":"\n"}
+,{"stream_name":"stderr","time":1368.443532895,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":1368.443536676,"data":"\n"}
+,{"stream_name":"stderr","time":1368.44354013,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1368.443543488,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/data/_utils/worker.py\", line 358, in _worker_loop\n"}
+,{"stream_name":"stderr","time":1368.44354745,"data":"    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]\n"}
+,{"stream_name":"stderr","time":1368.443551136,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/data/_utils/fetch.py\", line 54, in fetch\n"}
+,{"stream_name":"stderr","time":1368.443554903,"data":"    data = [self.dataset[idx] for idx in possibly_batched_index]\n"}
+,{"stream_name":"stderr","time":1368.443558491,"data":"            ~~~~~~~~~~~~^^^^^\n"}
+,{"stream_name":"stderr","time":1368.443562227,"data":"  File \"/tmp/ipykernel_23/1560345861.py\", line 13, in __getitem__\n"}
+,{"stream_name":"stderr","time":1368.443565973,"data":"    best_series = select_best_series(self.series_df, study_uid)\n"}
+,{"stream_name":"stderr","time":1368.443573432,"data":"  File \"/tmp/ipykernel_23/3429533179.py\", line 18, in select_best_series\n"}
+,{"stream_name":"stderr","time":1368.443577074,"data":"    p_mask = sub['Plane'].astype(str).str.lower().str.contains(plane.lower(), na=False)\n"}
+,{"stream_name":"stderr","time":1368.443580502,"data":"             ~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1368.44358407,"data":"  File \"/usr/local/lib/python3.13/dist-packages/pandas/core/frame.py\", line 4113, in __getitem__\n"}
+,{"stream_name":"stderr","time":1368.443587468,"data":"    indexer = self.columns.get_loc(key)\n"}
+,{"stream_name":"stderr","time":1368.443592302,"data":"  File \"/usr/local/lib/python3.13/dist-packages/pandas/core/indexes/base.py\", line 3819, in get_loc\n"}
+,{"stream_name":"stderr","time":1368.44359593,"data":"    raise KeyError(key) from err\n"}
+,{"stream_name":"stderr","time":1368.443599887,"data":"KeyError: 'Plane'\n"}
+,{"stream_name":"stderr","time":1368.443603318,"data":"\n"}
+,{"stream_name":"stderr","time":1368.443606946,"data":"\n"}
+,{"stream_name":"stderr","time":1370.691736547,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1370.691755623,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1370.872294948,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1370.872321238,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1372.164318018,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1372.244611194,"data":"[NbConvertApp] Writing 79333 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1375.305732706,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1375.999699996,"data":"[NbConvertApp] Writing 499180 bytes to __results__.html\n"}
+]

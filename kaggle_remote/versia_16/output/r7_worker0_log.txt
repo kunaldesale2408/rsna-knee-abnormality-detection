@@ -1,0 +1,13 @@
+FLUID_READY {"json": "/tmp/probe_r7/bundle/fluid_stacker.json", "sha256": "be5a1664077300db", "combine": "logit", "weights": [1.0], "adopted": {"Effusion": {"b0": -3.92573, "b_z": 0.32396, "b_lv": 0.75765, "b_miss": 2.12895}}, "volume": {"Effusion": "eff_sag_p99_open"}, "z": "v3b line mix", "weights_per_class": {"Effusion": [1.0]}}
+STATE_STACKER_READY {"json": "/tmp/probe_r7/bundle/state_stacker.json", "sha256": "7b54a3f774dad3f8", "adopted": {"Baker's": {"features": 7, "volume": null}}}
+MODEL_READY {"gpu": "Tesla T4", "amp": "fp16", "models": 4, "models2": 0, "spatial_models": 4, "extent_models": 4, "syn_decomp_models": 4, "crop": 352, "crop2": null, "compile_requested": true, "trainer_md5": "8622009e3db0414124d5614ed252d7a2", "studies": 2, "seconds": 7.0}
+/tmp/probe_r7/mainline_code/training/vendor_runtime/monai060/monai/utils/module.py:190: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  pkg = __import__(module)  # top level module
+/tmp/probe_r7/mainline_code/training/vendor_runtime/monai060/monai/utils/module.py:190: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  pkg = __import__(module)  # top level module
+get_mempolicy: Operation not permitted
+get_mempolicy: Operation not permitted
+COMPILE_READY {"mode": "default", "backend": "inductor", "shapes": [32, 64, 96, 128, 160, 192], "decision": "compiled == eager within 0.001 (max |dp| 0.000232)", "study_dprob": 0.0002319, "fp32_err_compiled": null, "fp32_err_eager": null, "per_group": [{"group": "group1", "crop": 352, "synthetic_dlogit": 0.0045753, "synthetic_dprob": 0.0005665, "study_dlogit": 0.0082169, "study_dprob": 0.001941}], "graphs": 6}
+{"done": 1, "of": 2, "scored": 1, "fallback": 0, "elapsed_s": 181.7, "s_per_study": 181.74, "decode_s": 32.6, "render_s": 3.6, "gpu_s": 10.8, "anchor_s": 1.7, "anchors": {"slab_prior": 1}, "windows": 574, "fluid_s": 0.0, "fluid_missing": {"Effusion": 1}}
+{"done": 2, "of": 2, "scored": 2, "fallback": 0, "elapsed_s": 191.4, "s_per_study": 95.69, "decode_s": 61.2, "render_s": 5.4, "gpu_s": 20.4, "anchor_s": 3.6, "anchors": {"slab_prior": 1, "skm_tea_joint_avg2": 1}, "windows": 1084, "fluid_s": 0.15, "fluid_missing": {"Effusion": 1}}
+WORKER_DONE {"studies": 2, "scored": 2, "timed_out": false, "seconds": 194.1, "amp": "fp16"} fallback 0 compile {"requested": true, "active": true, "fallback": null}

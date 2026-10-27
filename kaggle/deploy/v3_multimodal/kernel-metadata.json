@@ -1,0 +1,18 @@
+{
+  "id": "kunaldesale2408/rsna-knee-v3-multimodal-fusion",
+  "title": "RSNA Knee V3 Multimodal Fusion",
+  "code_file": "train_v3_multimodal.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [
+    "girishbose/dinov2-vits14-rsna-knee"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "kernel_sources": []
+}

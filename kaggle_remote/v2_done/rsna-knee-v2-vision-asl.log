@@ -1,0 +1,119 @@
+[{"stream_name":"stderr","time":8.15788963,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.157953916,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.157960757,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.157964649,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.798666372,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.798700973999999,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.798706838,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.798711832,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":21.540719549,"data":"[+] PyTorch Version: 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":21.540748615,"data":"[+] Execution Device: cuda\n"}
+,{"stream_name":"stdout","time":21.540752857,"data":"[+] GPU Device: Tesla T4\n"}
+,{"stream_name":"stdout","time":21.558686115,"data":"[+] Config: Backbone=dinov2_vitb14 (dim=768), ASL(gamma_neg=4.0), TTA=True, folds=(0, 1, 2, 3, 4), data_root=/kaggle/input/competitions/rsna-knee-abnormality-detection\n"}
+,{"stream_name":"stdout","time":21.983037543000002,"data":"[+] Dataset: 4407 total studies (0 gold-labeled studies).\n"}
+,{"stream_name":"stdout","time":21.98306656,"data":"[+] Pre-populating default soft targets.\n"}
+,{"stream_name":"stdout","time":21.983071812,"data":"[+] 5-Fold GroupKFold assigned: {0: 882, 1: 882, 4: 881, 3: 881, 2: 881}\n"}
+,{"stream_name":"stdout","time":22.146761783,"data":"\n"}
+,{"stream_name":"stdout","time":22.14678941,"data":"========== STARTING FOLD 0 ==========\n"}
+,{"stream_name":"stdout","time":22.146793972,"data":"[+] Initializing backbone: dinov2_vitb14 (dim=768)\n"}
+,{"stream_name":"stderr","time":60.478336714,"data":"/tmp/ipykernel_23/4275094894.py:76: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":60.478364214,"data":"  scaler = torch.cuda.amp.GradScaler(enabled=cfg.amp and device.type == 'cuda')\n"}
+,{"stream_name":"stderr","time":60.478370124,"data":"\n"}
+,{"stream_name":"stderr","time":60.478374576,"data":"/tmp/ipykernel_23/4275094894.py:76: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":60.478384957,"data":"  scaler = torch.cuda.amp.GradScaler(enabled=cfg.amp and device.type == 'cuda')\n"}
+,{"stream_name":"stderr","time":62.675497187,"data":"/tmp/ipykernel_23/4275094894.py:113: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":62.675533168,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":62.675561376,"data":"\n"}
+,{"stream_name":"stderr","time":62.675566348,"data":"/tmp/ipykernel_23/4275094894.py:113: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":62.675571964,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":3635.393267098,"data":"/tmp/ipykernel_23/4275094894.py:35: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":3635.399515398,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":3635.399527277,"data":"\n"}
+,{"stream_name":"stderr","time":3635.399530204,"data":"/tmp/ipykernel_23/4275094894.py:35: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":3635.399532977,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stdout","time":4553.359180282,"data":"Fold 0 | Epoch 01 | Train Loss: 0.1245 | Val Loss: 0.1245 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":9097.102419492,"data":"Fold 0 | Epoch 02 | Train Loss: 0.1245 | Val Loss: 0.1245 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":13686.095222091,"data":"Fold 0 | Epoch 03 | Train Loss: 0.1245 | Val Loss: 0.1245 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":18207.010294427,"data":"Fold 0 | Epoch 04 | Train Loss: 0.1245 | Val Loss: 0.1245 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":22741.582113707,"data":"Fold 0 | Epoch 05 | Train Loss: 0.1245 | Val Loss: 0.1245 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":22743.673116259,"data":"\n"}
+,{"stream_name":"stdout","time":22743.673175874,"data":"========== STARTING FOLD 1 ==========\n"}
+,{"stream_name":"stdout","time":22743.673183072,"data":"[+] Initializing backbone: dinov2_vitb14 (dim=768)\n"}
+,{"stream_name":"stdout","time":27237.879082893,"data":"Fold 1 | Epoch 01 | Train Loss: 0.1245 | Val Loss: 0.1245 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":32031.66787974,"data":"Fold 1 | Epoch 02 | Train Loss: 0.1245 | Val Loss: 0.1245 | Gold AUC: 0.5000\n"}
+,{"stream_name":"stdout","time":32034.322986959,"data":"[GUARD] Time limit reached (8.89h). Saving /kaggle/working/last_fold1.pt...\n"}
+,{"stream_name":"stdout","time":32035.933748313,"data":"\n"}
+,{"stream_name":"stdout","time":32035.937071306,"data":"========== STARTING FOLD 2 ==========\n"}
+,{"stream_name":"stdout","time":32035.9370842,"data":"[+] Initializing backbone: dinov2_vitb14 (dim=768)\n"}
+,{"stream_name":"stdout","time":32068.945099965,"data":"[GUARD] Time limit reached (8.90h). Saving /kaggle/working/last_fold2.pt...\n"}
+,{"stream_name":"stdout","time":32069.291264499,"data":"\n"}
+,{"stream_name":"stdout","time":32069.291295374,"data":"========== STARTING FOLD 3 ==========\n"}
+,{"stream_name":"stdout","time":32069.291301096,"data":"[+] Initializing backbone: dinov2_vitb14 (dim=768)\n"}
+,{"stream_name":"stdout","time":32102.172895631,"data":"[GUARD] Time limit reached (8.91h). Saving /kaggle/working/last_fold3.pt...\n"}
+,{"stream_name":"stdout","time":32102.482869953,"data":"\n"}
+,{"stream_name":"stdout","time":32102.482913112,"data":"========== STARTING FOLD 4 ==========\n"}
+,{"stream_name":"stdout","time":32102.482917478,"data":"[+] Initializing backbone: dinov2_vitb14 (dim=768)\n"}
+,{"stream_name":"stdout","time":32135.357153277,"data":"[GUARD] Time limit reached (8.92h). Saving /kaggle/working/last_fold4.pt...\n"}
+,{"stream_name":"stdout","time":32135.81283826,"data":"[+] Running 4x TTA inference with fold 0 checkpoint: /kaggle/working/best_auc_fold0.pt\n"}
+,{"stream_name":"stdout","time":32135.812878086,"data":"[+] Initializing backbone: dinov2_vitb14 (dim=768)\n"}
+,{"stream_name":"stderr","time":32181.78438347,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32181.784457492,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":32181.784478008,"data":"\n"}
+,{"stream_name":"stderr","time":32181.784482512,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32181.784486572,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":32185.28990367,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32185.289950104,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":32185.289955901,"data":"\n"}
+,{"stream_name":"stderr","time":32185.289960377,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32185.289965764,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":32188.499417364,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32188.499488902,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":32188.499494409,"data":"\n"}
+,{"stream_name":"stderr","time":32188.49949988,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32188.49950806,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stdout","time":32189.074125312,"data":"[+] Running 4x TTA inference with fold 1 checkpoint: /kaggle/working/best_auc_fold1.pt\n"}
+,{"stream_name":"stdout","time":32189.074159985,"data":"[+] Initializing backbone: dinov2_vitb14 (dim=768)\n"}
+,{"stream_name":"stderr","time":32225.949411477,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32225.949472058,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":32225.949481964,"data":"\n"}
+,{"stream_name":"stderr","time":32225.949491588,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32225.949495374,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":32227.380653264,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32227.380696776,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":32227.380704552,"data":"\n"}
+,{"stream_name":"stderr","time":32227.380707918,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32227.380727263,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":32228.624757885,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32228.624792315,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stderr","time":32228.624825329,"data":"\n"}
+,{"stream_name":"stderr","time":32228.624829727,"data":"/tmp/ipykernel_23/2094997218.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":32228.624834643,"data":"  with torch.cuda.amp.autocast(enabled=cfg.amp and device.type == 'cuda'):\n"}
+,{"stream_name":"stdout","time":32229.0166085,"data":"[OK] TTA Multi-fold submission saved to /kaggle/working/submission.csv with shape (3, 12)\n"}
+,{"stream_name":"stdout","time":32229.0166437,"data":"                                    StudyInstanceUID       ACL      MCL  \\\n"}
+,{"stream_name":"stdout","time":32229.016649312,"data":"0  1.2.826.0.1.3680043.8.498.10047035057544427318...  0.515137  0.51709   \n"}
+,{"stream_name":"stdout","time":32229.016653856,"data":"1  1.2.826.0.1.3680043.8.498.10062861783145312629...  0.515137  0.51709   \n"}
+,{"stream_name":"stdout","time":32229.01665805,"data":"2  1.2.826.0.1.3680043.8.498.10067514707072572280...  0.515625  0.51709   \n"}
+,{"stream_name":"stdout","time":32229.016662096,"data":"\n"}
+,{"stream_name":"stdout","time":32229.01666598,"data":"   Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA     PF OA  \\\n"}
+,{"stream_name":"stdout","time":32229.016670141,"data":"0         0.514648          0.517578   0.516602    0.518066  0.516602   \n"}
+,{"stream_name":"stdout","time":32229.0166751,"data":"1         0.515137          0.516602   0.516602    0.517578  0.517578   \n"}
+,{"stream_name":"stdout","time":32229.016679632,"data":"2         0.514648          0.518066   0.516602    0.517578  0.517578   \n"}
+,{"stream_name":"stdout","time":32229.016684017,"data":"\n"}
+,{"stream_name":"stdout","time":32229.01668858,"data":"   Effusion  Synovitis  Contusion  Fracture  \n"}
+,{"stream_name":"stdout","time":32229.016692869,"data":"0  0.519043   0.516602   0.515625  0.515137  \n"}
+,{"stream_name":"stdout","time":32229.016696809,"data":"1  0.519043   0.517090   0.515625  0.514648  \n"}
+,{"stream_name":"stdout","time":32229.016700923,"data":"2  0.518555   0.516602   0.516113  0.514648  \n"}
+,{"stream_name":"stderr","time":32229.017817834,"data":"/usr/local/lib/python3.13/dist-packages/pandas/io/formats/format.py:1458: RuntimeWarning: overflow encountered in cast\n"}
+,{"stream_name":"stderr","time":32229.017841047,"data":"  has_large_values = (abs_vals \u003e 1e6).any()\n"}
+,{"stream_name":"stderr","time":32229.017846523,"data":"\n"}
+,{"stream_name":"stderr","time":32229.017850364,"data":"/usr/local/lib/python3.13/dist-packages/pandas/io/formats/format.py:1458: RuntimeWarning: overflow encountered in cast\n"}
+,{"stream_name":"stderr","time":32229.017855072,"data":"  has_large_values = (abs_vals \u003e 1e6).any()\n"}
+,{"stream_name":"stderr","time":32235.843679594,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":32235.843714108,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":32236.196419531,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":32236.196460413,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":32237.840248203,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":32237.939404383,"data":"[NbConvertApp] Writing 135379 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":32240.630468898,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":32241.746854084,"data":"[NbConvertApp] Writing 541250 bytes to __results__.html\n"}
+]
